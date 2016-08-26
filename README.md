@@ -19,7 +19,7 @@ Import this package and write
 
 ```go
 p := fastping.NewPinger()
-ra, err := net.ResolveIPAddr("ip4:icmp", os.Args[1])
+ra, err := net.ResolveIPAddr("ip6:icmp", "www.google.com")
 if err != nil {
 	fmt.Println(err)
 	os.Exit(1)
